@@ -1,0 +1,56 @@
+.pico8_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+canvas#canvas {
+  margin-top: 10px;
+  width: 290px;
+  height: 270px;
+}
+
+@media screen and (min-width: 580px) and (min-height: 600px) {
+  canvas#canvas {
+    margin-top: 20px;
+    width: 580px;
+    height: 540px;
+  }
+}
+
+@media screen and (min-width: 1160px) and (min-height: 1150px) {
+  canvas#canvas {
+    margin-top: 30px;
+    width: 1160px;
+    height: 1080px;
+  }
+}
+
+.pico8_options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap:wrap;
+      -ms-flex-wrap:wrap;
+          flex-wrap:wrap
+}
+
+.pico8_el {
+  float: initial;
+  display: initial;
+}
