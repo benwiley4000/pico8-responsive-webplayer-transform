@@ -11,8 +11,10 @@ contents = p.read() \
   .replace('"""[CSS]"""', '"""' + overrideStyles + '"""') \
   .replace('"""[JS]"""', '"""' + restructureScript + '"""')
 
-p.write(contents)
+f = open('transform.py', 'w')
+f.write(contents)
 
 p.close()
 c.close()
 j.close()
+f.close()
