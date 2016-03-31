@@ -2,6 +2,8 @@
 
 [See it live here.](http://benwiley4000.github.io/pico8-responsive-webplayer-transform/pico8_responsive.html)
 
+[Download the latest release here.](https://github.com/benwiley4000/pico8-responsive-webplayer-transform/releases)
+
 This is a python script you can run on an HTML file exported from the [PICO-8 Fantasy Console](http://www.lexaloffle.com/pico-8.php). It will create a new HTML file that is better suited for viewing at various window sizes, by subtly restructuring the page and including new CSS styles. Because it only changes what it needs to, you can run it on an existing page that you've already re-styled.
 
 Usage:
