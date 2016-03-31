@@ -8,8 +8,8 @@ overrideStyles = c.read()
 restructureScript = j.read()
 
 contents = p.read() \
-  .replace('"""[CSS]"""', '"""' + overrideStyles + '"""') \
-  .replace('"""[JS]"""', '"""' + restructureScript + '"""')
+    .replace('"""[CSS]"""', '"""' + overrideStyles + '"""') \
+    .replace('"""[JS]"""', '"""' + restructureScript + '"""')
 
 f = open('transform.py', 'w')
 f.write(contents)
