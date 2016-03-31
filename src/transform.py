@@ -97,11 +97,11 @@ if not args['lazy']:
 
     if not (soup_available and lxml_available and cssutils_available):
         if not soup_available:
-            print('[WARNING]: "beautifulsoup4" module unavailable.')
+            print('[WARNING]: "beautifulsoup4" package unavailable.')
         if not lxml_available:
-            print('[WARNING]: "lxml" module unavailable.')
+            print('[WARNING]: "lxml" package unavailable.')
         if not cssutils_available:
-            print('[WARNING]: "cssutils" module unavailable.')
+            print('[WARNING]: "cssutils" package unavailable.')
         print('Using JavaScript (to be run in browser) as restructuring fallback.')
     else:
         restructure = soup_restructure
