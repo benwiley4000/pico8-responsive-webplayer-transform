@@ -4,7 +4,7 @@ Array.prototype.forEach.call(brs, function (br) {
   br.parentNode.removeChild(br);
 });
 
-// get rid of center elements (assume multiple elements to be safe)
+// unwrap center elements
 var centerElems = document.querySelectorAll('center');
 Array.prototype.forEach.call(centerElems, function (elem) {
   var parent = elem.parentNode;
@@ -21,7 +21,9 @@ var containerClassName = 'pico8_container';
 if (container.classList) {
   container.classList.add(containerClassName);
 } else {
-  container.className = container.className + ' ' + containerClassName;
+  container.className =
+    container.className.replace(containerClassName, '') +
+    ' ' + containerClassName;
 }
 
 // remove element-specific width from container element
